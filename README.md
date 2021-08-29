@@ -1,8 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# React-Treemap
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn`
+
+To install dependencies.
 
 ### `yarn start`
 
@@ -27,18 +31,27 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Assumptions
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application will always try to fit the item in minimum number of row
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Potential improvements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Use css flex / grid layout for the tree map.
+- Better test coverage and make base test case more reusable.
+- Add debounce for user input when interacting with state.
+- Get more familiar with `@testing-library` and testing `@reduxjs/toolkit` connected components
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Edge cases for discussion
 
-## Learn More
+```
+data: [
+  { name: "A", weight: 1, value: -0.02 },
+  { name: "B", weight: 1, value: 0.05 },
+  { name: "C", weight: 1, value: 0.015 },
+  { name: "D", weight: 1, value: -0.01 },
+],
+no_of_rows: 3
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+How can we fit it into 3 rows?
