@@ -1,5 +1,9 @@
 # React-Treemap
 
+## Demo
+
+https://mleung07.github.io/react-treemap/
+
 ## Available Scripts
 
 In the project directory, you can run:

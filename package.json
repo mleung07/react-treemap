@@ -2,6 +2,7 @@
   "name": "react-treemap",
   "version": "0.1.0",
   "private": true,
+  "homepage": "react-treemap",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -14,6 +15,7 @@
     "@types/react-redux": "^7.1.7",
     "@types/redux-mock-store": "^1.0.3",
     "@types/styled-components": "^5.1.13",
+    "gh-pages": "^3.2.3",
     "json-stringify-pretty-compact": "^3.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -27,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "coverage": "react-scripts test --watchAll=false --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
